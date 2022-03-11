@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/*  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: Outfit;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70%;
+    width: 20%;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow:  10px 20px 10px hsl(217deg 55% 10%);
+    position: relative;
+}
+.container img{
+    height: 55%;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    display: block;
+}
+.container .eye-icon{
+    position: absolute;
+    align-items: center;
+    display: none;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    border-radius: 10px;
+    height: 50%;
+    width: 85%;
+}
+.eye-icon svg{
+    font-size: 18px;
+}
+.container img:hover + .eye-icon{
+    transition: 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.base{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.base #item-1{
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+.base #item-1:hover{
+    color: hsl(178, 100%, 50%);
+}
+.base #item-2{
+    font-size: 14px;
+    word-spacing: 2px;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 14px;
+    font-weight: 400;
+}
+.price-time{
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+.price{
+    color: hsl(178, 100%, 50%);
+    display: flex;
+}
+.price svg{
+    margin-right: 5px;
+}
+.time{
+    color: hsl(215, 51%, 70%);
+    display: flex;
+}
+.time svg{
+    margin-right: 5px;
+}
+.base hr{
+    color: hsl(215, 32%, 27%);
+    margin-bottom: 15px;
+}
+.card-footer{
+    display: flex;
+}
+.card-footer img{
+    height: 30px;
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.card-footer p{
+    font-size: 14px;
+    margin-top: 5px;
+    color: hsl(215, 51%, 70%);
+}
+.card-footer span{
+    color: white;
+    cursor: pointer;
+}
+.card-footer span:hover{
+    color: hsl(178, 100%, 50%);
+}
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 768px){
+    .container{
+        height: 80%;
+        width: 90%;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 8px 18px 8px hsl(217deg 55% 10%);
+    }
+    .container .eye-icon{
+        height: 52%;
+        width: 94%;
+    }
+}
