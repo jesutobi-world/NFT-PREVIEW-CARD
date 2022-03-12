@@ -91,11 +91,13 @@ body{
 .time svg{
 margin-right: 10px;
 }
-.price p:hover{
+.price p{
     color: hsl(178, 100%, 50%);
+    font-size: 13px;
+    font-weight: 500;
     cursor: pointer;
 }
-.price p,
+
 .time p{
     color: hsl(215, 51%, 70%);
     font-size: 13px;
